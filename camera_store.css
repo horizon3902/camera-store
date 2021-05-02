@@ -1,0 +1,187 @@
+@font-face {
+  font-family: Lobster;
+  src: url(https://fonts.googleapis.com/css2?family=Lobster);
+}
+
+@font-face {
+  font-family: Nunito;
+  src: url(https://fonts.googleapis.com/css2?family=Nunito);
+}
+
+html{
+  font-size: 10px;
+}
+
+@media screen and (max-width:600px){
+  html{
+    font-size: 6px;
+  }
+}
+.nav-link{
+   font-size: 2.5rem;
+   font-family: Lobster;
+}
+
+li{
+  display: inline-flex;
+  margin: 4.7rem 4rem;
+}
+
+#header-img{
+  height: 10%;
+  width: 10%;
+}
+
+header{
+  background: #FEFCFF;
+  position: fixed;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+#header-img{
+  margin-left: 3rem;
+  margin-top: 1rem;
+}
+
+#header-img{
+  float: left;
+}
+
+nav ul{
+  float: right !important;
+  line-height: 2rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav a{
+  color: #634298;
+  text-decoration: none;
+}
+
+nav a:hover{
+  color: #5b315a;
+}
+
+.parallax{
+  background: url('https://res.cloudinary.com/horizon3902/image/upload/v1607577170/patrick-selin-dozkVhDyvhQ-unsplash_o0yvqv.jpg');
+  height: 60rem;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.tag{
+  display: block;
+  font-size: 5rem;
+  font-family: 'Lobster';
+  color: #644496;
+  padding-top: 20rem;
+  padding-left: 2rem;
+  text-shadow: 0.1rem 0.1rem 0.3rem black;
+}
+
+.video-class{
+  text-align: center;
+  font-size: 3rem;
+  font-family: 'Lobster';
+  color: #644496;
+}
+
+#video{
+ border-width: 0rem;
+ height: 40rem;
+ width: 64rem;
+}
+
+.prices-class{
+  background: url('https://res.cloudinary.com/horizon3902/image/upload/v1607609640/photo-1593122499547-34d691d12c49_mz6aso.jpg');
+  height: 60rem;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#prodH{
+  width:20%;
+  margin-left: 40%;
+  text-align: center;
+  font-size: 3rem;
+  font-family: 'Lobster';
+  background: white;
+  color: #644496;
+  font-weight: normal;
+}
+
+.row{
+  margin: 0;
+}
+
+.row:after{
+  content: "";
+  display: table;
+  clear: both
+}
+
+.column{
+  float: left;
+  width: 30%;
+  padding: 0 2.5rem;
+}
+
+.card{
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 5px;
+  padding: 1.6rem;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+.card:hover{
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px){
+  column{
+  width: 100%;
+  display: block;
+  margin-bottom: 20px;
+  }
+}
+
+.cams{
+  width: 50%;
+}
+
+#ini{
+  text-align: center;
+  font-size: 3rem;
+  font-family: Lobster;
+  color: #634298;
+}
+
+form{
+  display: flex;
+  justify-content: center;
+}
+
+input{
+  font-family: 'Nunito';
+}
+
+footer{
+  float: right;
+  font-family: 'Nunito';
+  font-size: 1.5rem;
+}
+
+  
+
