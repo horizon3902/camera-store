@@ -26,7 +26,7 @@ body{
    font-family: 'Lobster';
 }
 
-li{
+#stuff li{
   display: inline-flex;
   margin: 4.7rem 4rem;
 }
@@ -64,19 +64,19 @@ nav ul{
   list-style: none;
 }
 
-nav a{
+a{
   color: #634298;
   text-decoration: none;
 }
 
-nav a:hover{
+a:hover{
   color: #5b315a;
 }
 
 .parallax{
   background: url('https://res.cloudinary.com/horizon3902/image/upload/v1607577170/patrick-selin-dozkVhDyvhQ-unsplash_o0yvqv.jpg');
   height: 75rem;
-  scroll-margin-top: 1em;
+  
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -109,7 +109,7 @@ nav a:hover{
 .prices-class{
   background: url('https://res.cloudinary.com/horizon3902/image/upload/v1607609640/photo-1593122499547-34d691d12c49_mz6aso.jpg');
   height: 60rem;
-  scroll-margin-top: 1em;
+
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -122,28 +122,36 @@ nav a:hover{
   text-align: center;
   font-size: 3rem;
   font-family: 'Lobster';
-  background: white;
+  background-color: white;
   color: #644496;
   font-weight: normal;
 }
 
-.row{
-  margin: 0;
+:target::before {
+  content: "";
+  display: block;
+  height: 60px; 
+  margin: -70px 0 0; 
 }
 
-.row:after{
+.row{
+  margin: 2rem 2rem 5rem 20rem;
+}
+
+/*.row:after{
   content: "";
   display: table;
   clear: both
-}
+}*/
 
 .column{
   float: left;
   width: 30%;
-  padding: 0 2.5rem;
+  padding: 2rem, 2rem, 2rem, 5rem; 
 }
 
 .card{
+  width: 35rem;
   box-sizing: border-box;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   border-radius: 5px;
@@ -182,6 +190,40 @@ form{
 
 input{
   font-family: 'Nunito';
+}
+
+#loctable{
+  font-family: 'Nunito', Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#loctable td, #loctable th {
+  border: 0.1rem solid #ddd;
+  padding: 0.8rem;
+}
+
+#loctable tr:nth-child(even){background-color: #f2f2f2;}
+
+#loctable tr:hover{background-color: #ddd;}
+
+#loctable th{
+  font-size: 20px;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  text-align: center;
+  background-color: #634298;
+  color: white;
+}
+
+#loctable td{
+  font-size: 15px;
+  font-family: 'Nunito';
+}
+
+.socmed{
+  font-size: 20px;
+  margin-left: 45%;
 }
 
 footer{
