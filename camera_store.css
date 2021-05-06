@@ -12,11 +12,15 @@ html{
   font-size: 10px;
 }
 
-@media screen and (max-width:600px){
+body{
+  margin: 0;
+}
+
+/*@media screen and (max-width:600px){
   html{
     font-size: 6px;
   }
-}
+}*/
 .nav-link{
    font-size: 2.5rem;
    font-family: 'Lobster';
@@ -35,6 +39,7 @@ li{
 header{
   background: #FEFCFF;
   position: fixed;
+  z-index: 10;
   align-items: center;
   top: 0;
   left: 0;
@@ -70,7 +75,8 @@ nav a:hover{
 
 .parallax{
   background: url('https://res.cloudinary.com/horizon3902/image/upload/v1607577170/patrick-selin-dozkVhDyvhQ-unsplash_o0yvqv.jpg');
-  height: 60rem;
+  height: 75rem;
+  scroll-margin-top: 1em;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -103,6 +109,7 @@ nav a:hover{
 .prices-class{
   background: url('https://res.cloudinary.com/horizon3902/image/upload/v1607609640/photo-1593122499547-34d691d12c49_mz6aso.jpg');
   height: 60rem;
+  scroll-margin-top: 1em;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -138,7 +145,7 @@ nav a:hover{
 
 .card{
   box-sizing: border-box;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   border-radius: 5px;
   padding: 1.6rem;
   text-align: center;
@@ -149,13 +156,13 @@ nav a:hover{
   cursor: pointer;
 }
 
-@media screen and (max-width: 600px){
+/*@media screen and (max-width: 600px){
   column{
   width: 100%;
   display: block;
   margin-bottom: 20px;
   }
-}
+}*/
 
 .cams{
   width: 50%;
