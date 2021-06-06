@@ -1,0 +1,92 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>Customer Information</title>
+    <link type="text/css" rel="stylesheet" href="camera_store.css"></link>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster" rel='stylesheet' type='text/css'></link>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito" rel='stylesheet' type='text/css'></link>
+</head>
+<body>
+  <header id="header">
+    <img id="header-img" src="https://res.cloudinary.com/horizon3902/image/upload/v1607179838/1j_ojFVDOMkX9Wytexe43D6kifGIqxJImB3NwXs1M3EMoAJtliAqh.._fmm1cu.png" alt="logo"/>
+        
+    <nav id="nav-bar">
+      <ul id="stuff">
+        <li><a  class="nav-link" href="index.html#getst">Get Started</a></li>
+        <li><a  class="nav-link" href="index.html#products">Products</a></li>
+        <li><a  class="nav-link" href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <h1 class="vclass" id="cih">Customer Information Form</h1>
+  <div id="ciform">
+    <form class="custInfoForm" method="POST" action=" ">
+      <fieldset>
+        <legend id="formtext" style="font-weight: bold; color: #634298;">Your Name</legend>
+        <label for="fname" id="formtext">First name:</label><br />
+        <input type="text" id="fname" name="fname" /><br /><br />
+        <label for="lname" id="formtext">Last name:</label><br />
+        <input type="text" id="lname" name="lname" /><br /><br />
+      </fieldset>
+      <fieldset>
+        <legend id="formtext" style="font-weight: bold; color: #634298;">Email</legend>
+        <input type="email" id="email" />
+      </fieldset>
+      <fieldset>
+        <legend id="formtext" style="font-weight: bold; color: #634298;">Contact Number</legend>
+        <input type="tel" id="phNo" />
+      </fieldset>
+      <fieldset>
+        <legend id="formtext" style="font-weight: bold; color: #634298;">Address</legend>
+        <label id="formtext" for="line_1">Line 1:</label>
+        <label id="formtext" for="line_2" style="margin-left: 40%;">Line 2:</label><br />
+        <input id="line_1" name="line_1" />
+        <input id="line_2" name="line_2" style="margin-left: 21%;"/><br /><br />
+        <label id="formtext" for="state">State:</label><br />
+        <select id="formtext" name="state">
+          <option value="" disabled="disabled" selected="selected" style="font-family: Nunito; color:grey;">Select State</option>
+          <option value="andhra">Andhra Pradesh</option>
+          <option value="arunachal">Arunachal Pradesh</option>
+          <option value="assam">Assam</option>
+          <option value="bihar">Bihar</option>
+          <option value="chhattisgarh">Chhattisgarh</option>
+          <option value="mizoram">Delhi</option>
+          <option value="goa">Goa</option>
+          <option value="gujarat">Gujarat</option>
+          <option value="haryana">Haryana</option>
+          <option value="himachal">Himachal Pradesh</option>
+          <option value="jammu">Jammu and Kashmir</option>
+          <option value="jharkhand">Jharkhand</option>
+          <option value="karnataka">Karnataka</option>
+          <option value="kerala">Kerala</option>
+          <option value="ladakh">Ladakh</option>
+          <option value="madhya">Madhya Pradesh</option>
+          <option value="maha">Maharashtra</option>
+          <option value="manipur">Manipur</option>
+          <option value="mizoram">Mizoram</option>
+          <option value="meghalaya">Meghalaya</option>
+          <option value="nagaland">Nagaland</option>
+          <option value="odisha">Odisha</option>
+          <option value="punjab">Punjab</option>
+          <option value="rajas">Rajasthan</option>
+          <option value="sikkim">Sikkim</option>
+          <option value="tn">Tamil Nadu</option>
+          <option value="telangana">Telangana</option>
+          <option value="tripura">Tripura</option>
+          <option value="up">Uttar Pradesh</option>
+          <option value="uttarakhand">Uttarakhand</option>
+          <option value="wb">West Bengal</option>
+        </select><br /><br />
+        <label id="formtext" for="landmark">Landmark:</label><br />
+        <input type="text" id="landmark" name="landmark">
+        <label id="formtext" for="city">City:</label>
+      </fieldset>
+      <fieldset>
+        
+      </fieldset>
+      
+    </form>
+  </div>
+</body>
+</html>
