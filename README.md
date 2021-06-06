@@ -4,6 +4,7 @@
 
 * Tracking
   * Index done (06/05/2021)
+  * Customer Information Form added (06/06/2021)
 
 
 
