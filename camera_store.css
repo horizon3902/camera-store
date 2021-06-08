@@ -189,7 +189,7 @@ a:hover{
 }
 
 input{
-  font-family: 'Nunito';
+  font-family: 'Nunito','roboto';
 }
 
 #loctable{
@@ -218,7 +218,7 @@ input{
 
 #loctable td{
   font-size: 15px;
-  font-family: 'Nunito';
+  font-family: 'Nunito','roboto';
 }
 
 .socmed{
@@ -228,7 +228,7 @@ input{
 
 footer{
   float: right;
-  font-family: 'Nunito';
+  font-family: 'Nunito','roboto';
   font-size: 1.5rem;
 }
 
@@ -242,7 +242,7 @@ footer{
 }
 
 #formtext{
-  font-family: 'Nunito';
+  font-family: 'Nunito','roboto';
   font-size: 2rem;
 }
 
@@ -256,6 +256,13 @@ fieldset{
 textarea {
   width: 50rem;
   height: 10rem;
+}
+
+#formsub{
+  background-color: #644496;
+  font-family: 'Nunito','roboto';
+  font-size: 2rem;
+  
 }
   
 

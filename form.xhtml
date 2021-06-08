@@ -1,14 +1,14 @@
-
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Customer Information</title>
     <link type="text/css" rel="stylesheet" href="camera_store.css"></link>
     <link href="https://fonts.googleapis.com/css2?family=Lobster" rel='stylesheet' type='text/css'></link>
     <link href="https://fonts.googleapis.com/css2?family=Nunito" rel='stylesheet' type='text/css'></link>
 </head>
-<body>
+<body style="background: linear-gradient(45,purple,pink);">
   <header id="header">
     <a href="index.html"><img id="header-img" src="https://res.cloudinary.com/horizon3902/image/upload/v1607179838/1j_ojFVDOMkX9Wytexe43D6kifGIqxJImB3NwXs1M3EMoAJtliAqh.._fmm1cu.png" alt="logo"/></a>
         
@@ -22,8 +22,8 @@
   </header>
   <h1 class="vclass" id="cih">Customer Information Form</h1>
   <div id="ciform">
-    <form class="custInfoForm" method="POST" action="">
-      <fieldset aria-required="true">
+    <form class="custInfoForm" method="post" action="">
+      <fieldset>
         <legend id="formtext" style="font-weight: bold; color: #634298;">Personal</legend>
         <label id="formtext" for="fname">First Name:</label>
         <label id="formtext" for="lname" style="margin-left: 33%;">Last Name:</label><br />
@@ -39,14 +39,14 @@
         <label for="dob" id="formtext">Date of Birth:</label><br />
         <input type="date" name="dob" id="dob" max="2003-12-31"/><br /><br />
       </fieldset>
-      <fieldset aria-required="true">
+      <fieldset>
         <legend id="formtext" style="font-weight: bold; color: #634298;">Contact</legend>
         <label id="formtext" for="phNo">Phone Number:</label><br />
         <input type="tel" id="phNo" /><br /><br />
         <label id="formtext" for="email">Email:</label><br />
         <input type="email" id="email" /><br /><br />
       </fieldset>
-      <fieldset aria-required="true">
+      <fieldset>
         <legend id="formtext" style="font-weight: bold; color: #634298;">Address</legend>
         <label id="formtext" for="hname">House Name / Number:</label><br />
         <input type="text" id="hname" name="hname" /><br /><br />
@@ -127,7 +127,7 @@
         <label for="fb" id="formtext">Any feedback, queries, complains? Enter them here: </label><br /><br />
         <textarea id="fb" name="fb" placeholder="Please enter here...."></textarea>
       </fieldset><br />
-      <input type="submit" style="margin-left: 30%; width: 20rem; height: 5rem;" />
+      <input id="formsub" type="submit" style="margin-left: 30%; width: 20rem; height: 5rem; color: white; border-radius: 5px;" />
     </form>
   </div>
   <footer>Horizon Technologies, 2021</footer>
