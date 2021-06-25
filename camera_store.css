@@ -160,9 +160,6 @@ a:hover{
   background-color: #f1f1f1;
 }
 
-.card:hover{
-  cursor: pointer;
-}
 
 /*@media screen and (max-width: 600px){
   column{
@@ -261,7 +258,11 @@ textarea {
   background-color: #644496;
   font-family: 'Nunito','roboto';
   font-size: 2rem;
-  
 }
-  
+
+#formres{
+  background-color: indianred;
+  font-family: 'Nunito','roboto';
+  font-size: 1.5rem;
+}
 

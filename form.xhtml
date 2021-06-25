@@ -7,8 +7,9 @@
     <link type="text/css" rel="stylesheet" href="camera_store.css"></link>
     <link href="https://fonts.googleapis.com/css2?family=Lobster" rel='stylesheet' type='text/css'></link>
     <link href="https://fonts.googleapis.com/css2?family=Nunito" rel='stylesheet' type='text/css'></link>
+    <script type="text/javascript" src="frm_pg.js"></script>
 </head>
-<body style="background-image: linear-gradient(90deg, pink, white);">
+<body style="background-image: linear-gradient(90deg, pink, white);" onload="getmaxdob()">
   <header id="header">
     <a href="index.html"><img id="header-img" src="https://res.cloudinary.com/horizon3902/image/upload/v1607179838/1j_ojFVDOMkX9Wytexe43D6kifGIqxJImB3NwXs1M3EMoAJtliAqh.._fmm1cu.png" alt="logo"/></a>
         
@@ -22,29 +23,29 @@
   </header>
   <h1 class="vclass" id="cih">Customer Information Form</h1>
   <div id="ciform">
-    <form class="custInfoForm" method="post" action="">
+    <form class="custInfoForm" id="TheFormItself" method="post" action="" onsubmit="display_success()" onreset="resetF()">
       <fieldset>
         <legend id="formtext" style="font-weight: bold; color: #634298;">Personal</legend>
         <label id="formtext" for="fname">First Name:</label>
         <label id="formtext" for="lname" style="margin-left: 33%;">Last Name:</label><br />
-        <input id="fname" name="fname" />
-        <input id="lname" name="lname" style="margin-left: 21%;"/><br /><br />
+        <input id="fname" name="fname" required="required"/>
+        <input id="lname" name="lname" style="margin-left: 21%;" required="required"/><br /><br />
         <label id="formtext">Gender:</label><br />
-        <input type="radio" id="male" name="gender" value="male" />
+        <input type="radio" id="male" name="gender" value="male" required="required"/>
         <label for="male" id="formtext">Male</label>
-        <input type="radio" id="female" name="gender" value="female" />
+        <input type="radio" id="female" name="gender" value="female" required="required"/>
         <label for="female" id="formtext">Female</label>
-        <input type="radio" id="other" name="gender" value="other" />
-        <label for="other" id="formtext">Other</label><br /><br />
+        <input type="radio" id="other" name="gender" value="other" required="required"/>
+        <label for="other" id="formtext">Non-Binary</label><br /><br />
         <label for="dob" id="formtext">Date of Birth:</label><br />
-        <input type="date" name="dob" id="dob" max="2003-12-31"/><br /><br />
+        <input type="date" name="dob" id="dob" max="" required="required"/><br /><br />
       </fieldset>
       <fieldset>
         <legend id="formtext" style="font-weight: bold; color: #634298;">Contact</legend>
         <label id="formtext" for="phNo">Phone Number:</label><br />
-        <input type="tel" id="phNo" /><br /><br />
+        <input type="tel" id="phNo" required="required"/><br /><br />
         <label id="formtext" for="email">Email:</label><br />
-        <input type="email" id="email" /><br /><br />
+        <input type="email" id="email" required="required"/><br /><br />
       </fieldset>
       <fieldset>
         <legend id="formtext" style="font-weight: bold; color: #634298;">Address</legend>
@@ -127,7 +128,8 @@
         <label for="fb" id="formtext">Any feedback, queries, complains? Enter them here: </label><br /><br />
         <textarea id="fb" name="fb" placeholder="Please enter here...."></textarea>
       </fieldset><br />
-      <input id="formsub" type="submit" style="margin-left: 30%; width: 20rem; height: 5rem; color: white; border-radius: 5px;" />
+      <input id="formsub" type="submit" value="Submit" style="margin-left: 30%; width: 20rem; height: 5rem; color: white; border-radius: 5px;" onclick="get_confirmation()"/> <br /> <br />
+      <input id="formres" type="reset" value="Reset" style="margin-left: 37%; width: 10rem; height: 2.5rem; color: white; border-radius: 5px;" onmouseover="sure()" onmouseout="res()" />
     </form>
   </div>
   <footer>Horizon Technologies, 2021</footer>

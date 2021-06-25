@@ -6,8 +6,9 @@
   <link rel="stylesheet" href="camera_store.css">
   <link href="https://fonts.googleapis.com/css2?family=Lobster" rel='stylesheet' type='text/css'>
   <link href="https://fonts.googleapis.com/css2?family=Nunito" rel='stylesheet' type='text/css'>
+  <script type="text/javascript" src="ind_pg.js"></script>
   </head>    
-  <body>
+  <body onload="checkCookie()">
     <header id="header">
       <a href="index.html"><img id="header-img" src="https://res.cloudinary.com/horizon3902/image/upload/v1607179838/1j_ojFVDOMkX9Wytexe43D6kifGIqxJImB3NwXs1M3EMoAJtliAqh.._fmm1cu.png" alt="logo"/></a>
       
@@ -32,41 +33,26 @@
         <h3 id="prodH" style="text-align: center;">Products</h3>
           <div class="row">
             <div class="column">
-              <div class="card">
+              <div class="card" onmouseover="card1in()" onmouseout="card1out()">
                 <img class="cams" src="https://res.cloudinary.com/horizon3902/image/upload/v1608350254/transparent_rhmjgu.png" alt="camera1">
                 <p style="font-size: 3rem">RTX-3090</p>
-                <p style="font-size: 2rem">
-                  166 point Smart AutoFocus<br>
-                  4K Recording<br>
-                  Mirrorless<br>
-                  Fusion Burst<br>
-                </p>
+                <p style="font-size: 2rem"  id="card1info">Roll over here!</p>
                 <p style="font-size: 3rem">₹1,49,999</p>
               </div>
             </div>
             <div class="column">
-              <div class="card">
-                <img class="cams" src="https://res.cloudinary.com/horizon3902/image/upload/v1608355787/oie_transparent_3_f47c4x.png">
+              <div class="card"  onmouseover="card2in()" onmouseout="card2out()">
+                <img class="cams" src="https://res.cloudinary.com/horizon3902/image/upload/v1608355787/oie_transparent_3_f47c4x.png" alt="camera2"> 
                 <p style="font-size: 3rem"><br>RTX-2070</p>
-                <p style="font-size: 2rem">
-                  76 point Smart AutoFocus<br>
-                  50x Zoom Support<br>
-                  Mirrorless<br>
-                  AI Face Detection<br>
-                </p>
+                <p style="font-size: 2rem" id="card2info">Roll over here!</p>
                 <p style="font-size: 3rem">₹99,999</p>
               </div>
             </div>
             <div class="column">
-              <div class="card">
-                <img class="cams" src="https://res.cloudinary.com/horizon3902/image/upload/v1608355606/oie_transparent_2_orgahk.png" alt="camera1">
+              <div class="card" onmouseover="card3in()" onmouseout="card3out()">
+                <img class="cams" src="https://res.cloudinary.com/horizon3902/image/upload/v1608355606/oie_transparent_2_orgahk.png" alt="camera3">
                 <p style="font-size: 3rem"><br>GTX-1660S</p>
-                <p style="font-size: 2rem">
-                  50 point Smart AutoFocus<br>
-                  FullHD Recording<br>
-                  QuickAF<br>
-                  Fusion Burst<br>
-                </p>
+                <p style="font-size: 2rem"  id="card3info">Roll over here!</p>
                 <p style="font-size: 3rem">₹65,999</p>
               </div>
             </div>
