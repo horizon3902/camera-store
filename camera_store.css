@@ -228,6 +228,7 @@ footer{
   font-family: 'Nunito','roboto';
   font-size: 1.5rem;
 }
+/* XHTML FORM CSS */
 
 #cih{
   padding-top: 10rem;
@@ -266,3 +267,141 @@ textarea {
   font-size: 1.5rem;
 }
 
+/* Index Page CSS */
+
+.logregindbody{
+  background-image: url('https://res.cloudinary.com/horizon3902/image/upload/v1624808116/levi-bare-kH25ySDcz-8-unsplash_lxhywp.jpg'); 
+  background-size: cover; 
+  background-repeat: no-repeat;
+}
+
+#wel_ind{
+  display: flex;
+  justify-content: center;
+}
+
+.regbut {
+  display: inline-block;
+  padding: 0.6em 1.7em;
+  border: 0.1em solid #644496;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #644496;
+  text-align: center;
+  transition: all 0.2s;
+  font-size: 3rem;
+  margin-left: 20rem;
+}
+
+.regbut:hover {
+  color: white;
+  background-color: #644496;
+}
+
+#logbut{
+  text-decoration: underline;
+}
+
+/* Login Page CSS */
+
+.regform{
+  display: flex;
+  margin: auto;
+  margin-left: 37%;
+  margin-top: 1.6%;
+  text-align: center;
+}
+
+.regform input{
+  border-style: hidden;
+  border-radius: 4px;
+  height: 2.7rem;
+}
+
+.regform fieldset{
+  border-color: gray;
+  width: 40rem;
+}
+
+.regform legend{
+  margin-left: 36%;
+  margin-bottom: 2rem;
+}
+
+.regform #formsub:hover{
+  cursor: pointer;
+}
+
+/* Login Page CSS */
+
+.logform{
+  display: flex;
+  margin: auto;
+  margin-left: 37%;
+  margin-top: 10%;
+  text-align: center;
+}
+
+.logform input{
+  border-style: hidden;
+  border-radius: 4px;
+  height: 2.7rem;
+}
+
+.logform fieldset{
+  border-color: gray;
+  width: 40rem;
+}
+
+.logform legend{
+  margin-left: 38%;
+  margin-bottom: 2rem;
+}
+
+.logform #formsub:hover{
+  cursor: pointer;
+  
+}
+
+#clock{
+  display:flex; 
+  float:right; 
+  color:#644496; 
+  text-shadow: 0.1rem 0.1rem 0.3rem black; 
+  font-size: 3rem; 
+  margin-top: -20rem;
+  margin-right: 1rem;
+}
+
+#wishList{
+  font-family: 'Nunito', Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#wishList td, #wishList th {
+  border: 0.1rem solid #ddd;
+  padding: 0.8rem;
+}
+
+#wishList tr:nth-child(even){background-color: #f2f2f2;}
+
+#wishList tr:hover{background-color: #ddd;}
+
+#wishList th{
+  font-size: 20px;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  text-align: center;
+  background-color: #634298;
+  color: white;
+}
+
+#wishList td{
+  font-size: 15px;
+  font-family: 'Nunito','roboto';
+}

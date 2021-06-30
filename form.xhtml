@@ -11,13 +11,13 @@
 </head>
 <body style="background-image: linear-gradient(90deg, pink, white);" onload="getmaxdob()">
   <header id="header">
-    <a href="index.html"><img id="header-img" src="https://res.cloudinary.com/horizon3902/image/upload/v1607179838/1j_ojFVDOMkX9Wytexe43D6kifGIqxJImB3NwXs1M3EMoAJtliAqh.._fmm1cu.png" alt="logo"/></a>
+    <a href="home.php"><img id="header-img" src="https://res.cloudinary.com/horizon3902/image/upload/v1607179838/1j_ojFVDOMkX9Wytexe43D6kifGIqxJImB3NwXs1M3EMoAJtliAqh.._fmm1cu.png" alt="logo"/></a>
         
     <nav id="nav-bar">
       <ul id="stuff">
-        <li><a  class="nav-link" href="index.html#getst">Get Started</a></li>
-        <li><a  class="nav-link" href="index.html#products">Products</a></li>
-        <li><a  class="nav-link" href="index.html#contact">Contact</a></li>
+        <li><a  class="nav-link" href="home.php#getst">Get Started</a></li>
+        <li><a  class="nav-link" href="home.php#products">Products</a></li>
+        <li><a  class="nav-link" href="home.php#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -26,10 +26,12 @@
     <form class="custInfoForm" id="TheFormItself" method="post" action="" onsubmit="display_success()" onreset="resetF()">
       <fieldset>
         <legend id="formtext" style="font-weight: bold; color: #634298;">Personal</legend>
+        
         <label id="formtext" for="fname">First Name:</label>
         <label id="formtext" for="lname" style="margin-left: 33%;">Last Name:</label><br />
         <input id="fname" name="fname" required="required"/>
         <input id="lname" name="lname" style="margin-left: 21%;" required="required"/><br /><br />
+        
         <label id="formtext">Gender:</label><br />
         <input type="radio" id="male" name="gender" value="male" required="required"/>
         <label for="male" id="formtext">Male</label>
@@ -37,26 +39,33 @@
         <label for="female" id="formtext">Female</label>
         <input type="radio" id="other" name="gender" value="other" required="required"/>
         <label for="other" id="formtext">Non-Binary</label><br /><br />
+        
         <label for="dob" id="formtext">Date of Birth:</label><br />
         <input type="date" name="dob" id="dob" max="" required="required"/><br /><br />
       </fieldset>
       <fieldset>
         <legend id="formtext" style="font-weight: bold; color: #634298;">Contact</legend>
+        
         <label id="formtext" for="phNo">Phone Number:</label><br />
         <input type="tel" id="phNo" required="required"/><br /><br />
+        
         <label id="formtext" for="email">Email:</label><br />
         <input type="email" id="email" required="required"/><br /><br />
       </fieldset>
       <fieldset>
         <legend id="formtext" style="font-weight: bold; color: #634298;">Address</legend>
+        
         <label id="formtext" for="hname">House Name / Number:</label><br />
         <input type="text" id="hname" name="hname" /><br /><br />
+        
         <label id="formtext" for="line_1">Line 1:</label>
         <label id="formtext" for="line_2" style="margin-left: 40%;">Line 2:</label><br />
         <input id="line_1" name="line_1" />
         <input id="line_2" name="line_2" style="margin-left: 21%;"/><br /><br />
+        
         <label id="formtext" for="landmark">Landmark:</label><br />
         <input type="text" id="landmark" name="landmark" /><br /><br />
+        
         <label id="formtext" for="state">State:</label><br />
         <select id="formtext" name="state">
           <option value="" disabled="disabled" selected="selected" style="font-family: Nunito; color:grey;">Select State</option>
@@ -92,8 +101,10 @@
           <option value="uttarakhand">Uttarakhand</option>
           <option value="wb">West Bengal</option>
         </select><br /><br />
+        
         <label id="formtext" for="city">City:</label><br />
         <input type="text" id="landmark" name="landmark" /><br /><br />
+        
         <label id="formtext" for="pcode">Pin Code:</label><br />
         <input type="number" id="pcode" name="pcode" min="100000" max="999999"/><br /><br />
       </fieldset>

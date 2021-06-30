@@ -1,16 +1,46 @@
 <!DOCTYPE html>
 <html>
   <head>
+  <script>
+             setInterval(showTime, 1000);
+             function showTime() {
+                 let time = new Date();
+                 let hour = time.getHours();
+                 let min = time.getMinutes();
+                 let sec = time.getSeconds();
+                 am_pm = "AM";
+                if (hour > 12) {
+                     hour -= 12;
+                     am_pm = "PM";
+                 }
+                 if (hour == 0) {
+                     hr = 12;
+                     am_pm = "AM";
+                 }
+       
+                 hour = hour < 10 ? "0" + hour : hour;
+                 min = min < 10 ? "0" + min : min;
+                 sec = sec < 10 ? "0" + sec : sec;
+       
+                 let currentTime = hour + ":" 
+                     + min + ":" + sec + am_pm;
+       
+                 document.getElementById("clock")
+                     .innerHTML = 'Time: ' + currentTime;
+             }
+       
+             showTime();
+         </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
-  <title>Horizon Photography</title>
-  <link rel="stylesheet" href="camera_store.css">
+  <title>Home - Horizon Photography</title>
+  <link rel="stylesheet" href="camera_store.css?v=<?php echo time(); ?>">
   <link href="https://fonts.googleapis.com/css2?family=Lobster" rel='stylesheet' type='text/css'>
   <link href="https://fonts.googleapis.com/css2?family=Nunito" rel='stylesheet' type='text/css'>
-  <script type="text/javascript" src="ind_pg.js"></script>
+  <script type="text/javascript" src="ind_pg.js?v=<?php echo time(); ?>"></script>
   </head>    
   <body onload="checkCookie()">
     <header id="header">
-      <a href="index.html"><img id="header-img" src="https://res.cloudinary.com/horizon3902/image/upload/v1607179838/1j_ojFVDOMkX9Wytexe43D6kifGIqxJImB3NwXs1M3EMoAJtliAqh.._fmm1cu.png" alt="logo"/></a>
+      <a href="home.php"><img id="header-img" src="https://res.cloudinary.com/horizon3902/image/upload/v1607179838/1j_ojFVDOMkX9Wytexe43D6kifGIqxJImB3NwXs1M3EMoAJtliAqh.._fmm1cu.png" alt="logo"/></a>
       
       <nav id="nav-bar">
         <ul id="stuff">
@@ -22,6 +52,7 @@
     </header>    
         <div class="parallax">
           <span class="tag">Make the most of your memories, <br>with the best on the market</span>
+          <p id="clock"></p>
         </div>
 
         <div class="vclass" id="getst">
@@ -102,7 +133,20 @@
 
     </table>
       
-    </div>
+    </div><br/><br/>
+
+    <div id="wL">
+      <p id="ini">Your Wishlist!</p>
+      <p style="font-family: 'Nunito'; text-align: center; font-size: 2rem">This is your wishlist. Add and remove elements from here. Never forget your dreams.</p>
+      <input type="button" style="font-family: 'Nunito'; color: white; height: 5rem; width: 10rem; border-style:hidden; border-radius: 1rem; background-color: #644496; margin-left: 48%;" value="Add Wish" onclick="addRow('wishList')" /><br/><br/>
+      <table id="wishList" width="350px">  
+              <tr>  
+                   <td><input type="button" style="text-align: center;" name="button1" value="Forget" onclick="removeRow('button1')"></td>  
+                   <td>1</td>  
+                   <td><textarea></textarea></td>  
+              </tr>  
+         </table> 
+    </div><br/><br/>
     
     <div id="contact">
       <p id="ini">Contact Horizon</p>
